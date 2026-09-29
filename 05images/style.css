@@ -1,0 +1,205 @@
+body {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #14213d;
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+header p {
+    color: #e5e5e5;
+    font-size: .9rem;
+    font-weight: 300;
+    margin: .2rem 0 0 0;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #fca311;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: #14213d;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+nav li.active a {
+    background-color: #14213d;
+    color: #ffffff;
+}
+
+nav li a:hover {
+    background-color: #ffffff;
+    color: #14213d;
+}
+
+/* Main content styling */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #14213d;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main h2 {
+    color: #b45309;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+main ol {
+    background-color: #e5e5e5;
+    padding: .75rem 40px;
+    margin: 1rem 0;
+}
+
+main ul {
+    list-style-type: square;
+    background-color: #e5e5e5;
+    padding: .75rem 40px;
+    margin: 1rem 0;
+}
+
+main li {
+    margin: .3rem 0;
+    line-height: 1.4;
+}
+
+main dl {
+    background-color: #ffffff;
+    border: 1px solid #fca311;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+main dt {
+    color: #b45309;
+    font-weight: 700;
+    margin-top: .7rem;
+}
+
+main dd {
+    color: #333;
+    font-size: .9rem;
+    margin: .2rem 0 .7rem 20px;
+}
+
+main strong {
+    color: #14213d;
+    font-weight: 700;
+}
+
+main em {
+    font-weight: 300;
+}
+
+main a {
+    color: #8a4307;
+}
+
+main a:hover {
+    color: #14213d;
+}
+
+main address {
+    width: 220px;
+    background-color: #ffffff;
+    border: 2px solid #fca311;
+    border-radius: 10px;
+    padding: .75rem;
+    font-style: normal;
+    line-height: 1.4;
+}
+
+/* Home page image styling */
+figure.wrapped {
+    width: 40%;
+    margin: 0 0 10px 15px;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #b45309;
+    padding-top: .25rem;
+}
+
+/* Gallery styling */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 15px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .85rem;
+    color: #14213d;
+    padding-top: .3rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #14213d;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 10px;
+    font-size: .8rem;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 2px;
+}
