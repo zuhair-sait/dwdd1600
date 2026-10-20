@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for Trading Academy and tell us about your trading experience.">
+    <title>Registration | Trading Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <span>Trading Academy</span>
+    <p>Learn the Skills Behind Day Trading</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="strategies.html">Strategies</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="active"><a href="registration.html">Registration</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>Trading Academy Registration</h1>
+    <p>Interested in learning more about day trading? Complete this form to tell us about your experience and what you want to learn.</p>
+
+    <form method="get" action="thanks.html">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>First Name *
+                <input type="text" name="firstName" required>
+            </label>
+
+            <label>Last Name *
+                <input type="text" name="lastName" required>
+            </label>
+
+            <label>Email Address *
+                <input type="email" name="email" required>
+            </label>
+
+            <label>Phone Number
+                <input type="tel" name="phone">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Trading Experience</legend>
+            <p>How much trading experience do you have?</p>
+
+            <label>
+                <input type="radio" name="experience" value="beginner" required>
+                Beginner
+            </label>
+
+            <label>
+                <input type="radio" name="experience" value="intermediate">
+                Intermediate
+            </label>
+
+            <label>
+                <input type="radio" name="experience" value="advanced">
+                Advanced
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Trading Interests</legend>
+            <p>Which topics are you interested in learning? Select all that apply.</p>
+
+            <label>
+                <input type="checkbox" name="interests" value="technical-analysis">
+                Technical Analysis
+            </label>
+
+            <label>
+                <input type="checkbox" name="interests" value="risk-management">
+                Risk Management
+            </label>
+
+            <label>
+                <input type="checkbox" name="interests" value="futures">
+                Futures Trading
+            </label>
+
+            <label>
+                <input type="checkbox" name="interests" value="psychology">
+                Trading Psychology
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Learning Preferences</legend>
+
+            <label>Preferred Learning Schedule
+                <select name="schedule">
+                    <option value="">Please select</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                    <option value="weekend">Weekends</option>
+                </select>
+            </label>
+
+            <label>What are your trading goals?
+                <textarea name="goals" rows="5" placeholder="Tell us what you want to learn..."></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit Registration">
+
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Trading Academy</p>
+</footer>
+
+</body>
+</html>
