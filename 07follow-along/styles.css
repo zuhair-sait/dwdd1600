@@ -1,0 +1,194 @@
+/* Prevent box model problems */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* header stuff here */
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    width: 86px;
+    height: 50px;
+}
+
+header span {
+    margin: 0;
+    color: #895772;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header p {
+    margin: 0;
+    color: #895772;
+    font-size: 1.22rem;
+    letter-spacing: 2px;
+}
+
+/* Small screen navigation */
+@media only screen and (max-width: 600px) {
+    nav {
+        border-top: solid 1px #E0E6E6;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #8b5022;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-bottom: solid 1px #EEE;
+        font-weight: 700;
+    }
+
+    nav .active a {
+        background-color: #8b5022;
+        background-image: linear-gradient(to bottom, #a56a39, #70401b);
+        color: white;
+    }
+
+    nav a:hover {
+        background-color: #EEE;
+        color: #000;
+    }
+
+    nav .active a:hover {
+        color: white;
+    }
+} /* end small screens */
+
+/* Large screen navigation */
+@media only screen and (min-width: 601px) {
+    nav {
+        border-top: solid 1px #E0E6E6;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        padding: 1.2rem 1rem .3rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #8C501B;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 2px #fff;
+    }
+
+    nav .active a {
+        border-bottom: solid 2px #8b5022;
+    }
+
+    nav a:hover {
+        color: #000;
+    }
+} /* end large screens */
+
+/* main stuff here */
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #8b5022;
+    font-size: 2.5rem;
+    margin: .5rem 0 .8rem 0;
+    font-weight: 300;
+}
+
+main h2 {
+    color: #8b5022;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #333;
+    margin: 0 0 .8rem 0;
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+
+main a {
+    color: #9c3335;
+}
+
+/* Hero image */
+.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Gallery */
+.angeloGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.angeloGallery section {
+    flex-basis: 50%;
+    margin: 1rem 0;
+}
+
+.angeloGallery span {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: #895772;
+}
+
+.angeloGallery img {
+    width: 98%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.angeloGallery img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* footer stuff here */
+footer {
+    border-top: solid #895772 1px;
+    text-align: center;
+    color: #8b5022;
+    font-size: .8rem;
+    padding: 1rem 0;
+    clear: both;
+}
+
+footer a {
+    color: #8b5022;
+}
+
+/* Limit overall page width and center contents */
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
