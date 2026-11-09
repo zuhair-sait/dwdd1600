@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&display=swap');
+
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #43a0b6;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav a.active {
+    background-color: #43a0b6;
+    color: white;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 60vh;
+}
+
+main h1 {
+    color: #43a0b6;
+    font-weight: 500;
+}
+
+main h2 {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Form Fieldsets */
+.myForm fieldset {
+    border: 1px solid #43a0b6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+/* Form Legends */
+.myForm legend {
+    color: #43a0b6;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0 0.5rem;
+}
+
+/* Form Labels and Layout */
+.myForm label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm select,
+.myForm textarea {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    padding: 0.3rem;
+    border: 1px solid #888;
+    border-radius: 0.3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #222;
+    background-color: #fff;
+    margin-top: 0.3rem;
+}
+
+/* Radio Buttons and Checkboxes */
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: #43a0b6;
+}
+
+/* Comments Box */
+.myForm textarea {
+    height: 6rem;
+    resize: vertical;
+}
+
+/* Required Fields */
+.myForm input:required {
+    background-color: rgba(156, 51, 53, 0.1);
+}
+
+/* Submit Button */
+.myForm input[type="submit"] {
+    background-color: #43a0b6;
+    border: 1px solid #28788c;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 1rem 0 0 1vw;
+    cursor: pointer;
+}
+
+.myForm input[type="submit"]:hover {
+    background-color: #28788c;
+}
+
+/* Mobile Styling */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .myForm input[type="text"],
+    .myForm input[type="tel"],
+    .myForm input[type="email"],
+    .myForm select,
+    .myForm textarea {
+        width: 100%;
+    }
+}
