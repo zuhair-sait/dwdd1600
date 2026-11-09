@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drone Delivery | Request a Delivery</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    font-weight: 200;
+    background-color: white;
+    color: #222;
+}
+
+header {
+    background-color: #43a0b6;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+}
+
+header p {
+    font-size: 17px;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 18px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav a.active {
+    background-color: #43a0b6;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 25px;
+    min-height: 60vh;
+}
+
+main h1 {
+    color: #43a0b6;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Form Styling */
+
+.myForm fieldset {
+    border: 1px solid #43a0b6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.myForm legend {
+    color: #43a0b6;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0 0.5rem;
+}
+
+.myForm label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm select,
+.myForm textarea {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    padding: 0.3rem;
+    border: 1px solid #888;
+    border-radius: 0.3rem;
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #222;
+    background-color: white;
+    margin-top: 0.3rem;
+}
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: #43a0b6;
+}
+
+.myForm textarea {
+    height: 6rem;
+    resize: vertical;
+}
+
+.myForm input:required {
+    background-color: rgba(156, 51, 53, 0.1);
+}
+
+.myForm input[type="submit"] {
+    background-color: #43a0b6;
+    border: 1px solid #28788c;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 1rem 0 0 1vw;
+    cursor: pointer;
+}
+
+.myForm input[type="submit"]:hover {
+    background-color: #28788c;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .myForm input[type="text"],
+    .myForm input[type="tel"],
+    .myForm input[type="email"],
+    .myForm select,
+    .myForm textarea {
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Drone Delivery</h1>
+    <p>Fast, Reliable, and Innovative Delivery</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="delivery.html" class="active">Request a Delivery</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>Request a Delivery</h1>
+
+    <form method="get" class="myForm" action="thanks.html">
+
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <label>First Name*
+                <input type="text" name="fName" required>
+            </label>
+
+            <label>Last Name*
+                <input type="text" name="lName" required>
+            </label>
+
+            <label>Cell Number*
+                <input type="tel" name="phone"
+                placeholder="987-555-1234" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Delivery Method</legend>
+
+            <label>
+                <input type="radio" name="method" value="drone">
+                Drone Delivery (2 hours)
+            </label>
+
+            <label>
+                <input type="radio" name="method" value="motorcycle">
+                Motorcycle Delivery (4 hours)
+            </label>
+
+            <label>
+                <input type="radio" name="method" value="robot">
+                Robot Delivery (6 hours)
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Delivery Options</legend>
+
+            <label>
+                <input type="checkbox" name="porch" value="chosen">
+                Front Porch
+            </label>
+
+            <label>
+                <input type="checkbox" name="deck" value="chosen">
+                Back Deck
+            </label>
+
+            <label>
+                <input type="checkbox" name="driveway" value="chosen">
+                Driveway
+            </label>
+
+            <label>
+                <input type="checkbox" name="garage" value="chosen">
+                Garage
+            </label>
+
+            <label>Preferred Delivery Time
+                <select name="time">
+                    <option value="none">Please Select</option>
+                    <option value="morning">Morning (7 AM - 11 AM)</option>
+                    <option value="noon">Noon (11 AM - 2 PM)</option>
+                    <option value="afternoon">Afternoon (2 PM - 5 PM)</option>
+                    <option value="evening">Evening (5 PM - 8 PM)</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <label>Comments
+            <textarea name="comments"></textarea>
+        </label>
+
+        <input type="submit" value="Send Delivery Request">
+
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Drone Delivery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
