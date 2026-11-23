@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Register for Trading Academy and tell us about your trading experience.">
+
     <title>Registration | Trading Academy</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -26,7 +34,12 @@
 
 <main>
     <h1>Trading Academy Registration</h1>
-    <p>Interested in learning more about day trading? Complete this form to tell us about your experience and what you want to learn.</p>
+
+    <p>
+        Interested in learning more about day trading?
+        Complete this form to tell us about your experience
+        and what you want to learn.
+    </p>
 
     <form method="get" action="thanks.html">
 
@@ -52,45 +65,57 @@
 
         <fieldset>
             <legend>Trading Experience</legend>
+
             <p>How much trading experience do you have?</p>
 
             <label>
-                <input type="radio" name="experience" value="beginner" required>
+                <input type="radio" name="experience"
+                       value="beginner" required>
                 Beginner
             </label>
 
             <label>
-                <input type="radio" name="experience" value="intermediate">
+                <input type="radio" name="experience"
+                       value="intermediate">
                 Intermediate
             </label>
 
             <label>
-                <input type="radio" name="experience" value="advanced">
+                <input type="radio" name="experience"
+                       value="advanced">
                 Advanced
             </label>
         </fieldset>
 
         <fieldset>
             <legend>Trading Interests</legend>
-            <p>Which topics are you interested in learning? Select all that apply.</p>
+
+            <p>
+                Which topics are you interested in learning?
+                Select all that apply.
+            </p>
 
             <label>
-                <input type="checkbox" name="interests" value="technical-analysis">
+                <input type="checkbox" name="interests"
+                       value="technical-analysis">
                 Technical Analysis
             </label>
 
             <label>
-                <input type="checkbox" name="interests" value="risk-management">
+                <input type="checkbox" name="interests"
+                       value="risk-management">
                 Risk Management
             </label>
 
             <label>
-                <input type="checkbox" name="interests" value="futures">
+                <input type="checkbox" name="interests"
+                       value="futures">
                 Futures Trading
             </label>
 
             <label>
-                <input type="checkbox" name="interests" value="psychology">
+                <input type="checkbox" name="interests"
+                       value="psychology">
                 Trading Psychology
             </label>
         </fieldset>
@@ -109,7 +134,8 @@
             </label>
 
             <label>What are your trading goals?
-                <textarea name="goals" rows="5" placeholder="Tell us what you want to learn..."></textarea>
+                <textarea name="goals" rows="5"
+                          placeholder="Tell us what you want to learn..."></textarea>
             </label>
         </fieldset>
 
