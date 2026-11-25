@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Zuhair Sait">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore your trading knowledge through the Trading Academy skills assessment.">
+    <title>Trading Academy | Skills Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <span class="brand-mark">TA<span class="brand-dot">.</span></span>
+            <div>
+                <span class="brand-name">TRADING ACADEMY</span>
+                <span class="brand-tagline">MARKET EDUCATION / EST. 2026</span>
+            </div>
+        </div>
+        <span class="header-label">LEARN THE MARKET. RESPECT THE RISK.</span>
+    </div>
+</header>
+
+<nav class="site-nav" aria-label="Main navigation">
+    <ul>
+        <li><a href="index.html">01 / Fundamentals</a></li>
+        <li><a href="strategies.html">02 / Strategies</a></li>
+        <li><a href="gallery.html">03 / Gallery</a></li>
+        <li class="active"><a href="registration.html" aria-current="page">04 / Skills Assessment</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="page-intro">
+        <p class="eyebrow">TRADING ACADEMY / SELF-ASSESSMENT</p>
+        <h1>Find your edge.<br><span>Know your gaps.</span></h1>
+        <p>
+            Every trader starts somewhere. Use this questionnaire
+            to reflect on what you know about the markets and
+            which skills you want to develop.
+        </p>
+    </section>
+
+    <div class="assessment-intro">
+        <span class="assessment-icon">TA / 04</span>
+        <div>
+            <h2>Trading Knowledge Assessment</h2>
+            <p>This is an educational questionnaire, not a trading account application.</p>
+            <p>Fields marked with * are required.</p>
+        </div>
+    </div>
+
+    <form class="assessment-form" method="get" action="thanks.html">
+
+        <fieldset>
+            <legend>01 / YOUR PROFILE</legend>
+            <p class="field-description">
+                Start with basic contact information.
+            </p>
+
+            <label for="traderName">Your Name *</label>
+            <input type="text"
+                   id="traderName"
+                   name="traderName"
+                   placeholder="Enter your name"
+                   autocomplete="name"
+                   required>
+
+            <label for="traderEmail">Email Address *</label>
+            <input type="email"
+                   id="traderEmail"
+                   name="traderEmail"
+                   placeholder="name@example.com"
+                   autocomplete="email"
+                   required>
+
+            <label for="traderPhone">Phone Number</label>
+            <input type="tel"
+                   id="traderPhone"
+                   name="traderPhone"
+                   placeholder="Optional"
+                   autocomplete="tel">
+        </fieldset>
+
+        <fieldset>
+            <legend>02 / MARKET EXPERIENCE</legend>
+            <p class="field-description">
+                Think about your experience studying charts and placing trades.
+            </p>
+
+            <p class="question">Which statement best describes your trading experience? *</p>
+
+            <div class="choice-list">
+                <label class="choice">
+                    <input type="radio"
+                           name="experience"
+                           value="learning-basics"
+                           required>
+                    <span>I'm still learning how financial markets work.</span>
+                </label>
+
+                <label class="choice">
+                    <input type="radio"
+                           name="experience"
+                           value="paper-trading">
+                    <span>I've practiced using a simulated trading account.</span>
+                </label>
+
+                <label class="choice">
+                    <input type="radio"
+                           name="experience"
+                           value="live-trading">
+                    <span>I've placed trades using real money.</span>
+                </label>
+
+                <label class="choice">
+                    <input type="radio"
+                           name="experience"
+                           value="structured-plan">
+                    <span>I follow a documented strategy and review my results.</span>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>03 / TRADING KNOWLEDGE</legend>
+            <p class="field-description">
+                Identify concepts you already understand.
+                Select any that apply.
+            </p>
+
+            <div class="choice-list">
+                <label class="choice">
+                    <input type="checkbox"
+                           name="knowledge"
+                           value="market-structure">
+                    <span>Recognizing market structure and trend changes</span>
+                </label>
+
+                <label class="choice">
+                    <input type="checkbox"
+                           name="knowledge"
+                           value="position-sizing">
+                    <span>Calculating position size and maximum risk</span>
+                </label>
+
+                <label class="choice">
+                    <input type="checkbox"
+                           name="knowledge"
+                           value="liquidity">
+                    <span>Identifying liquidity areas on a price chart</span>
+                </label>
+
+                <label class="choice">
+                    <input type="checkbox"
+                           name="knowledge"
+                           value="futures-contracts">
+                    <span>Understanding futures contract specifications</span>
+                </label>
+
+                <label class="choice">
+                    <input type="checkbox"
+                           name="knowledge"
+                           value="trade-journal">
+                    <span>Reviewing performance with a trading journal</span>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>04 / YOUR NEXT STEP</legend>
+            <p class="field-description">
+                Think about the skill that would make the biggest
+                difference in your trading education.
+            </p>
+
+            <label for="learningFocus">What is your biggest learning priority? *</label>
+            <select id="learningFocus" name="learningFocus" required>
+                <option value="">Choose your main priority</option>
+                <option value="reading-price-action">Reading price action and market structure</option>
+                <option value="understanding-futures">Understanding futures contracts and leverage</option>
+                <option value="building-risk-plan">Building a personal risk management plan</option>
+                <option value="improving-discipline">Improving discipline and emotional control</option>
+                <option value="testing-strategies">Testing strategies using historical market data</option>
+            </select>
+
+            <label for="tradingReflection">
+                Imagine you had one month to improve a single
+                trading skill. What would you work on, and why?
+            </label>
+            <textarea id="tradingReflection"
+                      name="tradingReflection"
+                      rows="6"
+                      placeholder="Describe the skill you want to develop and how you would practice it..."></textarea>
+        </fieldset>
+
+        <div class="form-actions">
+            <p>REVIEW YOUR ANSWERS BEFORE CONTINUING</p>
+            <input type="submit" value="Complete My Assessment">
+        </div>
+
+    </form>
+</main>
+
+<footer class="site-footer">
+    <p>TRADING ACADEMY / EDUCATION FIRST</p>
+    <p>&copy; 2026 Zuhair Sait &bull; DWDD 1600</p>
+</footer>
+
+</body>
+</html>
